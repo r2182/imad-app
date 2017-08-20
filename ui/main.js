@@ -40,5 +40,5 @@ button.onclick = function() {
     
     //Make the request
     request.open('GET', 'http://riyaramakrishnan2182.imad.hasura-app.io/', true);
-    request.end(null);
+    request.send(null);
 };
