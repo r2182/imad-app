@@ -23,7 +23,7 @@ var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function() {
     
-    //make a request to the counter endpoint
+    //Create a request object
     var request = new XMLHttpRequest();
     
     
@@ -39,4 +39,8 @@ button.onclick = function() {
         }
         //Not done yet
     };
+    
+    //Make the request
+    request.open('GET', 'http://riyaramakrishnan2182.imad.hasura-app.io/', true);
+    request.end(null);
 };
